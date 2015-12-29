@@ -11,16 +11,13 @@
     :else status))
 
 (defn log-string [request response start-time]
-  (let [ms (diff start-time (now))]
+  (let [ms (diff start-time (now))
+        {:keys [request-method uri]} request]
     (str
-      (-> request :request-method name upper-case bold)
-      " "
-      (:uri request)
-      " "
-      (-> response :status color-status)
-      " "
-      ms
-      "ms")))
+      (-> request-method name upper-case bold) " "
+      uri " "
+      (-> response :status color-status) " "
+      ms "ms")))
 
 (defn log [request response start-time]
   (safe-println (log-string request response start-time)))
