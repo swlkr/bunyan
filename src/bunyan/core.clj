@@ -20,7 +20,7 @@
       ms "ms")))
 
 (defn log [request response start-time]
-  (safe-println (log-string request response start-time)))
+  (println (log-string request response start-time)))
 
 (defn wrap-with-logger [handler]
   (fn [request]

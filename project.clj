@@ -1,4 +1,4 @@
-(defproject bunyan "0.1.0"
+(defproject bunyan "0.1.1"
   :description "Simple logging ring middleware"
   :url "https://github.com/swlkr/bunyan"
   :license {:name "The MIT License"
