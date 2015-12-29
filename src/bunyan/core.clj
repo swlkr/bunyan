@@ -1,7 +1,7 @@
 (ns bunyan.core
   (:require [clojure.string :refer [upper-case]]
             [bunyan.ansi :refer :all]
-            [bunyan.utils :refer :all]))
+            [bunyan.time :refer :all]))
 
 (defn color-status [status]
   (cond
