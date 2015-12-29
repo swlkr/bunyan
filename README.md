@@ -11,7 +11,7 @@ Usage
 In your `project.clj`, add the following dependency:
 
 ```clojure
-[bunyan "0.1.0"]
+[bunyan "0.1.1"]
 ```
 
 Then, add the middleware to your stack.
